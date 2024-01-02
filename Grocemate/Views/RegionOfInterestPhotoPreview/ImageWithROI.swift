@@ -135,16 +135,14 @@ struct ImageWithROI: View {
 
             dismiss()
         } label: {
-            ZStack {
-                HStack(spacing: 5) {
-                    Image(systemName: "sparkle.magnifyingglass")
-                        .font(.system(size: 24, weight: .semibold))
-                        .tint(.white)
-                    Text("Identify")
-                        .font(.system(size: 24, weight: .semibold, design: .rounded))
-                        .tint(.white)
-                }
+            HStack(spacing: 5) {
+                Image(systemName: "sparkle.magnifyingglass")
+                Text("Identify")
             }
+            .fontWeight(.bold)
+            .fontDesign(.rounded)
+            .tint(.white)
+            .padding(5)
         }
         .frame(width: 150, height: 50)
         .buttonStyle(.borderedProminent)

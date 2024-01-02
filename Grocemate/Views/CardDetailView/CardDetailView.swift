@@ -29,10 +29,19 @@ struct CardDetailView<ViewModel: CardDetailViewModellable>: View {
                 .environment(\.editMode, $viewModel.editMode)
                 .scrollContentBackground(.hidden)
             }
+            .navigationTitle(
+                titleTextView
+            )
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
 
     // MARK: - Subviews
+    private var titleTextView: Text {
+        let titleText = viewModel.editOrCreateIngredientCard == .editCard ? "Edit Card" : "Create Card"
+
+        return Text(titleText)
+    }
     private var addButton: some View {
         Button {
             withAnimation {
@@ -42,19 +51,18 @@ struct CardDetailView<ViewModel: CardDetailViewModellable>: View {
             Text("Add Ingredient")
                 .fontWeight(.bold)
                 .fontDesign(.rounded)
-                .padding()
-                .background {
-                    RoundedRectangle(cornerRadius: 15)
-                        .foregroundStyle(.blue)
-                }
+                .padding(5)
         }
-        .tint(.white)
+        .buttonStyle(.borderedProminent)
+        .buttonBorderShape(
+            .roundedRectangle(radius: 30)
+        )
     }
 
     private var ingredientCardTitle: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 15)
-                .fill(viewModel.titleError ? .red.opacity(0.2) : .blue.opacity(0.1))
+                .fill(viewModel.titleError ? .red.opacity(0.2) : .gray.opacity(0.1))
                 .frame(height: 60)
             ZStack(alignment: Alignment(horizontal: .trailing, vertical: .center)) {
                 TextField("Recipe Title", text: $viewModel.title)
@@ -145,6 +153,7 @@ struct CardDetailView<ViewModel: CardDetailViewModellable>: View {
         }
     }
 
+    // MARK: - Animations
     private func titleErrorAnimation() {
         withAnimation(.easeInOut(duration: 0.5)) {
             viewModel.titleError = true

@@ -25,6 +25,7 @@ final class CreateCardViewModel: ObservableObject, CardDetailViewModellable {
     @Published var ingredients: [Ingredient]
 
     private let context: NSManagedObjectContext
+    let editOrCreateIngredientCard: EditOrCreateIngredientCard = .createCard
 
     /// Initialize from "Manually Add Card"
     init(coreDataController: CoreDataController, context: NSManagedObjectContext) {

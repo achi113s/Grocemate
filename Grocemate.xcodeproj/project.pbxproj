@@ -25,6 +25,7 @@
 		4453D8A82B0931AB001B1C36 /* EditCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4453D8A72B0931AB001B1C36 /* EditCardViewModel.swift */; };
 		445D78D92B434FFA00DF7B68 /* IngredientRecognitionHandlerLimits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445D78D82B434FFA00DF7B68 /* IngredientRecognitionHandlerLimits.swift */; };
 		445D78DB2B43627000DF7B68 /* RecognitionCallLimits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445D78DA2B43627000DF7B68 /* RecognitionCallLimits.swift */; };
+		445D78DD2B43B0A800DF7B68 /* EditOrCreateIngredientCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445D78DC2B43B0A800DF7B68 /* EditOrCreateIngredientCard.swift */; };
 		445DCC452AFC579700CA97DE /* Ingredient+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445DCC442AFC579700CA97DE /* Ingredient+CoreDataProperties.swift */; };
 		4465BDAE2B23936800DB97B1 /* StringArray-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4465BDAD2B23936800DB97B1 /* StringArray-Extensions.swift */; };
 		4465BDB02B23CCC500DB97B1 /* CardDetailSaveError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4465BDAF2B23CCC500DB97B1 /* CardDetailSaveError.swift */; };
@@ -96,6 +97,7 @@
 		4453D8A72B0931AB001B1C36 /* EditCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCardViewModel.swift; sourceTree = "<group>"; };
 		445D78D82B434FFA00DF7B68 /* IngredientRecognitionHandlerLimits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientRecognitionHandlerLimits.swift; sourceTree = "<group>"; };
 		445D78DA2B43627000DF7B68 /* RecognitionCallLimits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecognitionCallLimits.swift; sourceTree = "<group>"; };
+		445D78DC2B43B0A800DF7B68 /* EditOrCreateIngredientCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditOrCreateIngredientCard.swift; sourceTree = "<group>"; };
 		445DCC442AFC579700CA97DE /* Ingredient+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ingredient+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		4465BDAB2B2278DD00DB97B1 /* Grocemate.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Grocemate.xctestplan; sourceTree = "<group>"; };
 		4465BDAD2B23936800DB97B1 /* StringArray-Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StringArray-Extensions.swift"; sourceTree = "<group>"; };
@@ -285,6 +287,7 @@
 				448933782B31146100121DCE /* OpenAIError.swift */,
 				4489337D2B31186F00121DCE /* IngredientRecognitionStage.swift */,
 				445D78DA2B43627000DF7B68 /* RecognitionCallLimits.swift */,
+				445D78DC2B43B0A800DF7B68 /* EditOrCreateIngredientCard.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -537,6 +540,7 @@
 			files = (
 				445D78DB2B43627000DF7B68 /* RecognitionCallLimits.swift in Sources */,
 				44C7F9AF2B07395100AFE8DD /* HomeViewModel.swift in Sources */,
+				445D78DD2B43B0A800DF7B68 /* EditOrCreateIngredientCard.swift in Sources */,
 				448933772B3112B300121DCE /* OpenAIManager.swift in Sources */,
 				440ECB822AF812F800E6BD5C /* Text-Extensions.swift in Sources */,
 				44DDEAF72B0F2290002AB0CE /* HapticType.swift in Sources */,
